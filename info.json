@@ -1,0 +1,43 @@
+{
+    "endpoints": {
+        "/p1": {
+            "method": "GET",
+            "description": "Returns the first page",
+            "parameters": []
+        },
+        "/p2": {
+            "method": "GET",
+            "description": "Returns the second page",
+            "parameters": []
+        },
+        "/file/:fileName": {
+            "method": "GET",
+            "description": "Returns the file with identified filename",
+            "parameters": ["filename"]
+        },
+        "/objects/:type": {
+            "method": "GET",
+            "description": "Returns the list of objects with identified type",
+            "parameters": ["type"]
+        },
+        "/info": {
+            "method": "GET",
+            "description": "Returns the documentation",
+            "parameters": []
+        },
+        "objects": {
+            "admins": {
+                "description": "our admins",
+                "count": []
+            },
+            "students": {
+                "description": "our students",
+                "count": []
+            },
+            "teachers": {
+                "description": "our teachers",
+                "count": []
+            }
+        }
+    }
+}
